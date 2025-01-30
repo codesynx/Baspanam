@@ -1,0 +1,25 @@
+<h1>{{ 'COMMON.MY_PROPERTIES' | translate }}</h1>
+<h2>{{ 'PROPERTY_CREATE.ADD_NEW' | translate }}</h2>
+
+@if (listings && listings.length > 0 || loadingFetchAll) {
+  <div class="listing-grid">
+    @for(listing of listings; track listing.publicId) {
+    <app-card-listing [listing]="listing"
+                      [cardMode]="'landlord'"
+                      (deleteListing)="onDeleteListing($event)">
+    </app-card-listing>
+    }
+  </div>
+} @else {
+  <div class="flex flex-column justify-content-center align-items-center h-10rem">
+    <h1>{{ 'COMMON.NO_PROPERTIES' | translate }}</h1>
+    <div class="text-xl">{{ 'COMMON.NO_PROPERTIES_DESC' | translate }}</div>
+  </div>
+}
+
+@if(loadingFetchAll) {
+  <div class="flex justify-content-center align-items-center h-15rem">
+    <fa-icon [icon]="'circle-notch'" size="3x" animation="spin" class="ml-2 text-primary"></fa-icon>
+  </div>
+}
+

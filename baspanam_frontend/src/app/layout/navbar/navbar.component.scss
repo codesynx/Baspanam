@@ -1,0 +1,75 @@
+@import "../../../assets/scss/baspana-variables";
+
+::ng-deep {
+  .search-icon {
+    width: 15px;
+    height: 30px;
+    border-radius: 70px;
+    padding: 15px;
+    background-color: $primaryColor; // Use navy blue for the search icon background
+    color: white; // Ensure the icon is visible on the navy background
+  }
+
+  .guest-btn {
+    padding: 5px 10px !important;
+  }
+
+  .separator {
+    height: 23px;
+  }
+
+  .middle-group {
+    height: 50px;
+  }
+
+  .menu {
+    width: 90px;
+    height: 50px;
+  }
+
+  .search {
+    width: 380px;
+  }
+
+  .baspana-logo {
+    height: 40px; // Adjust this value to fit your design
+    width: auto;
+  }
+}
+
+:host ::ng-deep {
+  .language-selector {
+    .p-dropdown {
+      border-radius: 1.5rem;
+      min-width: 120px;
+      
+      &:not(.p-disabled):hover {
+        border-color: var(--primary-color);
+      }
+      
+      &:not(.p-disabled).p-focus {
+        box-shadow: 0 0 0 0.2rem rgba(var(--primary-color-rgb), 0.2);
+        border-color: var(--primary-color);
+      }
+    }
+    
+    .p-dropdown-panel {
+      .p-dropdown-items {
+        padding: 0.5rem 0;
+        
+        .p-dropdown-item {
+          padding: 0.5rem 1rem;
+          
+          &:hover {
+            background-color: var(--surface-hover);
+          }
+          
+          &.p-highlight {
+            background-color: var(--primary-color);
+            color: var(--primary-color-text);
+          }
+        }
+      }
+    }
+  }
+}

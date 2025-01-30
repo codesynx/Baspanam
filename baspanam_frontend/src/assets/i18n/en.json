@@ -1,0 +1,110 @@
+{
+  "NAVBAR": {
+    "RENT_OUT": "Rent Out",
+    "GUESTS": "Guests",
+    "LOCATION": "Where",
+    "DATES": "When",
+    "PROPERTIES": "Properties",
+    "BOOKINGS": "Bookings",
+    "RESERVATIONS": "Reservations",
+    "LOGOUT": "Logout",
+    "REGISTER": "Register",
+    "LOGIN": "Login"
+  },
+  "COMMON": {
+    "PER_DAY": "per day",
+    "ERROR": "Error",
+    "SUCCESS": "Success",
+    "GUESTS": "guests",
+    "MY_PROPERTIES": "My Properties",
+    "BEDROOMS": "bedroom",
+    "BEDS": "bed",
+    "BATHROOMS": "bathroom",
+    "HOSTED_BY": "Hosted by",
+    "HOUSE_TYPE": "This house is of type {{type}}",
+    "NO_PROPERTIES": "No properties found",
+    "NO_PROPERTIES_DESC": "Looks like you don't have any properties yet",
+    "SELECT_COUNTRY": "Select your country",
+    "NO_RESULTS": "No results found",
+    "NO_RESULTS_CATEGORY": "No listings found in this category",
+    "NO_RESULTS_SEARCH": "Nothing found for your search!"
+  },
+  "ERRORS": {
+    "GET_LISTING": "An error occurred while getting the listing",
+    "CANCEL_BOOKING": "An error occurred while canceling the booking",
+    "GET_RESERVATIONS": "An error occurred while getting reservations",
+    "DELETE_LISTING": "An error occurred while deleting the listing",
+    "SEARCH_LISTING": "An error occurred while searching for listings",
+    "GET_DATES": "An error occurred while getting unavailable dates"
+  },
+  "BOOKINGS": {
+    "MY_BOOKINGS": "My Bookings",
+    "PAST_FUTURE": "Past and future bookings",
+    "NO_BOOKINGS": "No bookings found",
+    "NO_BOOKINGS_DESC": "Looks like you don't have any bookings yet",
+    "SUCCESS": "Booking successfully created",
+    "ERROR": "Failed to create booking",
+    "CANCEL_SUCCESS": "Booking successfully cancelled",
+    "RESERVE": "Reserve",
+    "LOGIN_REQUIRED": "You need to login before making a reservation",
+    "TOTAL": "Total"
+  },
+  "PROPERTY_CREATE": {
+    "ADDRESS_INFO": "Your address will only be shared after guests make a booking",
+    "SHOW_HOUSE": "Show guests what your house looks like",
+    "BEDS_GUESTS": "Beds, number of guests, etc.",
+    "ADD_PHOTOS": "Add photos of your house",
+    "ADD_TITLE": "Now let's give your house a title and description",
+    "ADD_DETAILS": "You'll add more details like bed types later",
+    "ADD_NEW": "Add and remove properties",
+    "BEDROOMS": "Bedrooms",
+    "BEDS": "Beds",
+    "BATHROOMS": "Bathrooms",
+    "SELECT_CATEGORY": "Which of these best describes your place?",
+    "LOCATION_CORRECT": "Is the marker in the right spot?",
+    "SET_PRICE": "Now, let's set the price",
+    "PRICE_CHANGE": "You can change it anytime",
+    "PRICE_REQUIRED": "Price is required",
+    "SHARE_BASIC_INFO": "Share basic information about your place",
+    "MORE_DETAILS_LATER": "You'll add more details like bed types later"
+  },
+  "RESERVATIONS": {
+    "MY_RESERVATIONS": "My Reservations",
+    "PAST_FUTURE": "Past and future bookings for your house",
+    "NO_RESERVATIONS": "No reservations found",
+    "NO_RESERVATIONS_DESC": "Looks like you don't have any reservations yet"
+  },
+  "SEARCH": {
+    "WHERE_TO": "Where do you want to go?",
+    "WHEN_TO": "When do you want to go?",
+    "BEDS_GUESTS": "Beds, number of guests, etc."
+  },
+  "CATEGORIES": {
+    "ALL": "All",
+    "AMAZING_VIEWS": "Amazing views",
+    "OMG": "OMG!",
+    "TREEHOUSES": "Treehouses",
+    "BEACH": "Beach",
+    "FARMS": "Farms",
+    "TINY_HOMES": "Tiny homes",
+    "LAKE": "Lake",
+    "CONTAINERS": "Containers",
+    "CAMPING": "Camping",
+    "CASTLE": "Castle",
+    "SKIING": "Skiing",
+    "CAMPERS": "Campers",
+    "ARCTIC": "Arctic",
+    "BOAT": "Boat",
+    "BED_AND_BREAKFASTS": "Bed & breakfasts",
+    "ROOMS": "Rooms",
+    "EARTH_HOMES": "Earth homes",
+    "TOWER": "Tower",
+    "CAVES": "Caves",
+    "LUXES": "Luxe",
+    "CHEFS_KITCHEN": "Chef's kitchen"
+  },
+  "PROPERTY": {
+    "DELETE_SUCCESS": "Property successfully deleted",
+    "DELETE_ERROR": "An error occurred while deleting the property"
+  }
+} 

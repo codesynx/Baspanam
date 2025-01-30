@@ -1,0 +1,25 @@
+@if (listings && listings.length > 0 || loadingFetchAll) {
+  <div class="listing-grid">
+    @for (listing of listings; track listing.publicId) {
+      <app-card-listing [listing]="listing" [cardMode]="'tenant'"></app-card-listing>
+    }
+  </div>
+} @else if (currentCategory) {
+  <div class="flex flex-column justify-content-center align-items-center h-10rem">
+    <h1>{{ 'COMMON.NO_RESULTS_CATEGORY' | translate }}</h1>
+  </div>
+} @else if (searchParams) {
+  <div class="flex flex-column justify-content-center align-items-center h-10rem">
+    <h1>{{ 'COMMON.NO_RESULTS_SEARCH' | translate }}</h1>
+  </div>
+} @else {
+  <div class="flex flex-column justify-content-center align-items-center h-10rem">
+    <h1>{{ 'COMMON.NO_RESULTS' | translate }}</h1>
+  </div>
+}
+
+@if (loadingFetchAll) {
+  <div class="flex justify-content-center align-items-center h-15rem">
+    <fa-icon [icon]="'circle-notch'" size="3x" animation="spin" class="ml-2 text-primary"></fa-icon>
+  </div>
+}

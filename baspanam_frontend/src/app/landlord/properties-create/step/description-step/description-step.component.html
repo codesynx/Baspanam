@@ -1,0 +1,15 @@
+<div class="mb-3">
+  <h1 class="mb-1">{{ 'PROPERTY_CREATE.ADD_TITLE' | translate }}</h1>
+  <h2 class="mt-0">{{ 'PROPERTY_CREATE.ADD_DETAILS' | translate }}</h2>
+
+  <div class="flex flex-column gap-3">
+    <input type="text" pInputText id="title"
+           [formControl]="titleControl"
+           placeholder="Title">
+    <textarea pInputTextarea id="description"
+              [formControl]="descriptionControl"
+              [autoResize]="true"
+              rows="5"
+              placeholder="Description"></textarea>
+  </div>
+</div>

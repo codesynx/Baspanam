@@ -1,0 +1,5 @@
+<div class="mb-3">
+  <h1 class="mb-1">{{ 'PROPERTY_CREATE.LOCATION_CORRECT' | translate }}</h1>
+  <h2 class="mt-0">{{ 'PROPERTY_CREATE.ADDRESS_INFO' | translate }}</h2>
+  <app-location-map [location]="location()" (locationChange)="onLocationChange($event)"></app-location-map>
+</div>

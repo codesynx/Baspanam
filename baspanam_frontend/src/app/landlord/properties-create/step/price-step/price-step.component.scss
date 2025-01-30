@@ -1,0 +1,57 @@
+.dollar {
+  transform: translate(18px, 19px);
+}
+
+.placeholder-validation {
+  height: 21px;
+}
+
+.p-input-icon-left {
+  position: relative;
+}
+
+.p-input-icon-left i.tenge {
+  position: absolute;
+  left: 0.75rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.p-input-icon-left i.tenge::before {
+  content: '₸';
+  font-style: normal;
+}
+
+.p-inputgroup {
+  width: 300px;
+
+  .p-inputtext {
+    text-align: right;
+    padding-right: 1rem;
+  }
+
+  .p-inputgroup-addon {
+    background-color: #f8f9fa;
+    border-color: #ced4da;
+    color: #495057;
+    min-width: 2.5rem;
+    
+    &:first-child {
+      border-right: 0;
+    }
+    
+    &:last-child {
+      border-left: 0;
+    }
+  }
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}

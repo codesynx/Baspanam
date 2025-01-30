@@ -1,0 +1,21 @@
+<div class="mb-3">
+  <h1 class="mb-1">{{ 'PROPERTY_CREATE.SET_PRICE' | translate }}</h1>
+  <h2 class="mt-0">{{ 'PROPERTY_CREATE.PRICE_CHANGE' | translate }}</h2>
+
+  <form #formPrice="ngForm" novalidate class="w-full">
+    <div class="flex align-items-center">
+      <div class="p-inputgroup">
+        <span class="p-inputgroup-addon">₸</span>
+        <input #priceInput="ngModel" name="price" placeholder="0" required
+               class="p-inputtext-lg" type="number" pInputText min="0"
+               [ngModel]="price().value" (ngModelChange)="onPriceChange($event)"/>
+        <span class="p-inputgroup-addon">/ {{ 'COMMON.PER_DAY' | translate }}</span>
+      </div>
+    </div>
+    @if (priceInput.dirty && priceInput.invalid) {
+      <small id="price-required" class="block mt-2 text-primary">{{ 'PROPERTY_CREATE.PRICE_REQUIRED' | translate }}</small>
+    } @else {
+      <div class="placeholder-validation"></div>
+    }
+  </form>
+</div>

@@ -1,0 +1,21 @@
+<h1>{{ 'BOOKINGS.MY_BOOKINGS' | translate }}</h1>
+<h2>{{ 'BOOKINGS.PAST_FUTURE' | translate }}</h2>
+<div class="listing-grid">
+  @for (booking of bookedListings; track booking.bookingPublicId) {
+    <app-card-listing [listing]="booking" [cardMode]="'booking'"
+                      (cancelBooking)="onCancelBooking($event)"></app-card-listing>
+  }
+</div>
+
+@if (!loading && bookedListings.length === 0) {
+  <div class="flex flex-column align-items-center justify-content-center h-10rem">
+    <h1>{{ 'BOOKINGS.NO_BOOKINGS' | translate }}</h1>
+    <div class="text-xl">{{ 'BOOKINGS.NO_BOOKINGS_DESC' | translate }}</div>
+  </div>
+}
+
+@if (loading) {
+  <div class="flex justify-content-center align-items-center h-10rem">
+    <fa-icon class="ml-2 text-primary" icon="circle-notch" size="3x" animation="spin"></fa-icon>
+  </div>
+}

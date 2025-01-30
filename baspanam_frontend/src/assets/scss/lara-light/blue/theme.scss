@@ -1,0 +1,14 @@
+$primaryColor: #000080 !default; // Navy Blue
+$primaryLightColor: #0000b3 !default; // Lighter Navy Blue
+$primaryDarkColor: #000066 !default; // Darker Navy Blue
+$primaryDarkerColor: #00004d !default; // Even Darker Navy Blue
+$primaryTextColor: #ffffff !default; // Keep white text on navy background
+
+$highlightBg: rgba(0, 0, 128, 0.1) !default; // Light navy blue background for highlights
+$highlightTextColor: $primaryDarkerColor !default;
+$highlightFocusBg: rgba($primaryColor, .24) !default;
+
+@import '../_variables';
+@import './_fonts';
+@import './../../theme-base/_components';
+@import '../_extensions';

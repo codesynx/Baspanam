@@ -1,0 +1,29 @@
+<div class="px-4 mb-3">
+  @switch (this.currentStep.id) {
+    @case (LOCATION) {
+      <h1>{{ 'SEARCH.WHERE_TO' | translate }}</h1>
+      <app-location-map [location]="newSearch.location"
+                        [placeholder]="'COMMON.SELECT_COUNTRY' | translate"
+                        (locationChange)="onNewLocation($event)"></app-location-map>
+    }
+    @case (DATES) {
+      <h1>{{ 'SEARCH.WHEN_TO' | translate }}</h1>
+      <app-search-date [dates]="newSearch.dates"
+                       (datesChange)="onNewDate($event)"
+                       (stepValidityChange)="onValidityChange($event)">
+      </app-search-date>
+    }
+    @case (GUESTS) {
+      <h1 class="mb-1">{{ 'SEARCH.BEDS_GUESTS' | translate }}</h1>
+      <app-info-step [infos]="newSearch.infos"
+                     (infoChange)="onInfoChange($event)"
+                     (stepValidityChange)="onValidityChange($event)"></app-info-step>
+    }
+  }
+</div>
+<app-footer-step [currentStep]="currentStep"
+                 [isAllStepsValid]="isAllStepsValid()"
+                 [loading]="loadingSearch"
+                 (finish)="search()"
+                 (next)="nextStep()"
+                 (previous)="previousStep()"></app-footer-step>
